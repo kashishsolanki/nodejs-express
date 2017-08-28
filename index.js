@@ -9,4 +9,4 @@ app.get('/', function(request, response){
 	response.sendFile('index.html', {root: __dirname});
 });
 
-app.listen(1337);
+app.listen(process.env.PORT || 1337);
